@@ -1,0 +1,27 @@
+id: org.benbitcode208.spytdownloader
+runtime: org.freedesktop.Platform
+runtime-version: '26.08'
+sdk: org.freedesktop.Sdk
+command: spytdownloader
+
+finish-args:
+  - --share=network
+  - --share=ipc
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --filesystem=xdg-download
+
+modules:
+  - name: spytdownloader
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 main.sh /app/bin/spytdownloader
+      - install -Dm644 org.benbitcode208.spytdownloader.desktop /app/share/applications/org.benbitcode208.spytdownloader.desktop
+      - install -Dm644 org.benbitcode208.spytdownloader.metainfo.xml /app/share/metainfo/org.benbitcode208.spytdownloader.metainfo.xml
+    sources:
+      - type: file
+        path: main.sh
+      - type: file
+        path: org.benbitcode208.spytdownloader.desktop
+      - type: file
+        path: org.benbitcode208.spytdownloader.metainfo.xml
