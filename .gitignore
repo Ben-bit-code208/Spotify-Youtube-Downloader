@@ -1,0 +1,6 @@
+/.flatpak-builder
+/.git
+/build
+/builddir
+/run
+/main/.directory

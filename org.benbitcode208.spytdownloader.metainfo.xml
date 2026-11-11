@@ -16,7 +16,7 @@
     <update_contact>ben.klumski@fhg.nrw.schule</update_contact>
   </developer>
 
-  <content_rating type="oars-1.1">moderate</content_rating>
+  <content_rating type="oars-1.1"/>
 
   <agreement type="privacy" version_id="1.0">
     <agreement_section id="introduction">

@@ -1,12 +1,10 @@
-#!/usr/bin/env xdg-open
 [Desktop Entry]
-Version=1.0
 Type=Application
-
+Version=1.0
 Name=Spotify/Youtube Downloader
 Comment=Spotify/Youtube Downloader is a flatpak aplication that downloads your songs and favorite playlists and if theres an update it askes if it should download the playlist update
 Categories=AudioVideo;Music;
-
-Icon=spytdownloader
+Icon=org.benbitcode208.spytdownloader
 Exec=spytdownloader
-Terminal=false
+Terminal=true
+StartupNotify=true

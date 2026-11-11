@@ -10,6 +10,11 @@ finish-args:
   - --socket=wayland
   - --socket=fallback-x11
   - --filesystem=xdg-download
+  - --filesystem=xdg-music
+  - --device=usb
+  - --filesystem=/media
+  - --filesystem=/run/media
+  - --filesystem=/mnt
 
 modules:
   - name: spytdownloader
@@ -18,6 +23,7 @@ modules:
       - install -Dm755 main.sh /app/bin/spytdownloader
       - install -Dm644 org.benbitcode208.spytdownloader.desktop /app/share/applications/org.benbitcode208.spytdownloader.desktop
       - install -Dm644 org.benbitcode208.spytdownloader.metainfo.xml /app/share/metainfo/org.benbitcode208.spytdownloader.metainfo.xml
+      - install -Dm644 org.benbitcode208.spytdownloader.svg /app/share/icons/hicolor/scalable/apps/org.benbitcode208.spytdownloader.svg
     sources:
       - type: file
         path: main.sh
@@ -25,3 +31,5 @@ modules:
         path: org.benbitcode208.spytdownloader.desktop
       - type: file
         path: org.benbitcode208.spytdownloader.metainfo.xml
+      - type: file
+        path: org.benbitcode208.spytdownloader.svg

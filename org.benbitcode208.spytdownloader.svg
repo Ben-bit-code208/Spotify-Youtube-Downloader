@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#232833"/>
+      <stop offset="1" stop-color="#0f1116"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="512" height="512" rx="112" ry="112" fill="url(#bg)"/>
+
+  <!-- music note -->
+  <g fill="#1DB954">
+    <ellipse cx="176" cy="352" rx="40" ry="33"/>
+    <ellipse cx="324" cy="326" rx="40" ry="33"/>
+    <rect x="204" y="136" width="24" height="216" rx="12"/>
+    <rect x="352" y="108" width="24" height="216" rx="12"/>
+    <path d="M204 136 L376 108 L376 160 L204 188 Z"/>
+  </g>
+
+  <!-- download badge -->
+  <circle cx="398" cy="398" r="66" fill="#ffffff"/>
+  <path d="M398 352 L438 392 L414 392 L414 434 L382 434 L382 392 L358 392 Z" fill="#0f1116"/>
+</svg>
